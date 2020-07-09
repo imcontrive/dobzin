@@ -1,75 +1,14 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
+import Nav from "./Nav";
 
 export default class Partner extends Component {
   render() {
     return (
       <main>
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
-        {/* <!-- Start Navbar Area --> */}
-        <div className="navbar-area">
-          <div className="luvion-responsive-nav">
-            <div className="container">
-              <div className="luvion-responsive-menu">
-                <div className="logo">
-                  <a href="index.html">
-                    <img src="/assets/media/logo.png" alt="logo" />
-                    <img src="/assets/media/black-logo.png" alt="logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="luvion-nav">
-            <div className="container">
-              <nav className="navbar navbar-expand-md navbar-light">
-                <a className="navbar-brand" href="index.html">
-                  <img src="/assets/media/logo.png" alt="logo" />
-                  <img src="/assets/media/black-logo.png" alt="logo" />
-                </a>
-
-                <div
-                  className="collapse navbar-collapse mean-menu"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
-                      <a href="index.html" className="nav-link">
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="about.html" className="nav-link">
-                        About Us
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="merchants.html" className="nav-link">
-                        Merchants
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="contact.html" className="nav-link">
-                        Need Help?
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="others-options">
-                    <a href="login.html" className="login-btn">
-                      <i className="flaticon-user"></i> Log In
-                    </a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        {/* // <!-- End Navbar Area --> */}
+        <Loader />
+        <Nav />
         {/* // <!-- Start Page Title Area --> */}
         <div
           className="page-title-area item-bg1 jarallax"
@@ -81,10 +20,7 @@ export default class Partner extends Component {
             </div>
           </div>
         </div>
-        {/* <!-- End Page Title Area --> */}
-        {/*
-<!-- Start FAQ Area -->
-*/}
+
         <section className="faq-area ptb-70">
           <div className="container">
             <div className="row">
@@ -199,11 +135,7 @@ export default class Partner extends Component {
             </div>
           </div>
         </section>
-        {/*
-<!-- End FAQ Area -->
-*/} {/*
-<!-- Start Footer Area -->
-*/}
+
         <footer className="footer-area">
           <div className="container">
             <div className="row">
@@ -321,9 +253,6 @@ export default class Partner extends Component {
             <img src="/assets/media/map.png" alt="map" />
           </div>
         </footer>
-        {/*
-<!-- End Footer Area -->
-*/}
         <div className="go-top">
           <i className="fas fa-arrow-up"></i>
         </div>

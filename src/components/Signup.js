@@ -1,17 +1,12 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
 
 export default class Signup extends Component {
   render() {
     return (
       <main>
-        {/* <!-- Preloader --> */}
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
-        {/* <!-- End Preloader --> */}
+        <Loader />
 
         {/* <!-- Start Signup Area --> */}
         <section className="signup-area">
@@ -22,14 +17,14 @@ export default class Signup extends Component {
                   <div className="d-table-cell">
                     <div className="signup-form">
                       <div className="logo">
-                        <a href="index.html">
+                        <NavLink to="/">
                           <img src="/assets/media/black-logo.png" alt="image" />
-                        </a>
+                        </NavLink>
                       </div>
 
                       <h3>Open up your Dobzin account now</h3>
                       <p>
-                        Already signed up? <a href="login.html">Log in</a>
+                        Already signed up? <NavLink to="/login">Log in</NavLink>
                       </p>
 
                       <form>

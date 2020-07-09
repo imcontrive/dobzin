@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import Loader from "./Loader";
 import Nav from "./Nav";
+import NavList from "./NavList";
+import QuickLinks from "./QuickLinks";
 
 export default class Index extends Component {
   render() {
@@ -8,8 +11,6 @@ export default class Index extends Component {
       <main>
         <Loader />
         <Nav />
-
-        {/* Error in Code Here */}
         <div
           className="main-banner-section jarallax"
           data-jarallax='{"speed": 0.3}'
@@ -45,9 +46,10 @@ export default class Index extends Component {
                           only on the amount used
                         </p>
                       </ul>
-                      <a href="sign-up.html" className="btn btn-primary">
+
+                      <NavLink to="sign-up" className="btn btn-primary">
                         Apply Now
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
 
@@ -295,9 +297,9 @@ export default class Index extends Component {
                       </span>
                     </li>
                   </ul>
-                  <a href="sign-up.html" className="btn btn-primary">
+                  <NavLink to="sign-up" className="btn btn-primary">
                     Get Credit Limit
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -730,11 +732,10 @@ export default class Index extends Component {
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget">
                   <div className="logo">
-                    <a href="index.html">
+                    <NavLink to="/">
                       <img src="assets/media/black-logo.png" alt="logo" />
-                    </a>
+                    </NavLink>
                     <p>
-                      {" "}
                       Dobzin is a digital payment solution to provide app based
                       credit line.
                     </p>
@@ -775,42 +776,13 @@ export default class Index extends Component {
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget pl-5">
                   <h3>Company</h3>
-                  <ul className="list">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="merchants.html">Merchants</a>
-                    </li>
-                    <li>
-                      <a href="partner.html">Partner With Us</a>
-                    </li>
-                    <li>
-                      <a href="https://angel.co/company/dobzin/jobs">Careers</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                  </ul>
+                  <NavList />
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget">
                   <h3>Quick Links</h3>
-                  <ul className="list">
-                    <li>
-                      <a href="faq.html">FAQ's</a>
-                    </li>
-                    <li>
-                      <a href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="terms.html">Terms & Condition</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
+                  <QuickLinks />
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6 col-md-6">
@@ -846,8 +818,6 @@ export default class Index extends Component {
         <div className="go-top">
           <i className="fas fa-arrow-up" />
         </div>
-
-        {/* Over Footer Area  */}
       </main>
     );
   }

@@ -1,76 +1,16 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
+import Nav from "./Nav";
+import NavList from "./NavList";
+import QuickLinks from "./QuickLinks";
 
 export default class Faq extends Component {
   render() {
     return (
       <main>
-        <div class="preloader" style={{ display: "none" }}>
-          <div class="loader">
-            <div class="shadow"></div>
-            <div class="box"></div>
-          </div>
-        </div>
-
-        {/* <!-- Start Navbar Area --> */}
-        <div className="navbar-area">
-          <div className="luvion-responsive-nav">
-            <div className="container">
-              <div className="luvion-responsive-menu">
-                <div className="logo">
-                  <a href="index.html">
-                    <img src="/assets/media/logo.png" alt="logo" />
-                    <img src="/assets/media/black-logo.png" alt="logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="luvion-nav">
-            <div className="container">
-              <nav className="navbar navbar-expand-md navbar-light">
-                <a className="navbar-brand" href="index.html">
-                  <img src="/assets/media/logo.png" alt="logo" />
-                  <img src="/assets/media/black-logo.png" alt="logo" />
-                </a>
-
-                <div
-                  className="collapse navbar-collapse mean-menu"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
-                      <a href="index.html" className="nav-link">
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="about.html" className="nav-link">
-                        About Us
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="merchants.html" className="nav-link">
-                        Merchants
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="contact.html" className="nav-link">
-                        Need Help?
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="others-options">
-                    <a href="login.html" className="login-btn">
-                      <i className="flaticon-user"></i> Log In
-                    </a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        {/* <!-- End Navbar Area --> */}
+        <Loader />
+        <Nav />
 
         {/* <!-- Start Page Title Area --> */}
         <div
@@ -256,9 +196,9 @@ export default class Faq extends Component {
               <div className="contact-cta-box">
                 <h3>Can’t find a solution?</h3>
                 <p>Get in touch with us. Our team is on standby to help.</p>
-                <a href="contact.html" className="btn btn-primary">
+                <NavLink href="/contact" className="btn btn-primary">
                   Contact Us
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -272,9 +212,9 @@ export default class Faq extends Component {
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget">
                   <div className="logo">
-                    <a href="index.html">
+                    <NavLink href="/">
                       <img src="/assets/media/black-logo.png" alt="logo" />
-                    </a>
+                    </NavLink>
                     <p>
                       Dobzin is a digital payment solution to provide app based
                       credit line.
@@ -316,42 +256,13 @@ export default class Faq extends Component {
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget pl-5">
                   <h3>Company</h3>
-                  <ul className="list">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="merchants.html">Merchants</a>
-                    </li>
-                    <li>
-                      <a href="partner.html">Partner With Us</a>
-                    </li>
-                    <li>
-                      <a href="https://angel.co/company/dobzin/jobs">Careers</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                  </ul>
+                  <NavList />
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6 col-md-6">
                 <div className="single-footer-widget">
                   <h3>Quick Links</h3>
-                  <ul className="list">
-                    <li>
-                      <a href="faq.html">FAQ's</a>
-                    </li>
-                    <li>
-                      <a href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="terms.html">Terms & Condition</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
+                  <QuickLinks />
                 </div>
               </div>
               <div className="col-lg-3 col-sm-6 col-md-6">

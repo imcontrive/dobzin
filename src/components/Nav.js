@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class Nav extends Component {
   render() {
@@ -8,10 +9,10 @@ export default class Nav extends Component {
           <div className="container">
             <div className="luvion-responsive-menu">
               <div className="logo">
-                <a href="index.html">
+                {/* <NavLink exact activeClassName="active" to="/">
                   <img src="assets/media/logo.png" alt="logo" />
                   <img src="assets/media/black-logo.png" alt="logo" />
-                </a>
+                </NavLink> */}
               </div>
             </div>
           </div>
@@ -20,40 +21,40 @@ export default class Nav extends Component {
         <div className="luvion-nav">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <a className="navbar-brand " href="index.html">
+              <NavLink exact activeClassName="active" to="/">
                 <img src="assets/media/logo.png" alt="logo" />
-                <img src="assets/media/black-logo.png" alt="logo" />
-              </a>
+                {/* <img src="assets/media/black-logo.png" alt="logo" /> */}
+              </NavLink>
               <div
                 className="collapse navbar-collapse mean-menu"
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a href="index.html" className="nav-link">
+                    <NavLink exact activeClassName="active" to="/">
                       Home
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="about.html" className="nav-link">
+                    <NavLink activeClassName="active" to="/about">
                       About Us
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="merchants.html" className="nav-link">
+                    <NavLink activeClassName="active" to="/merchants">
                       Merchants
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="contact.html" className="nav-link">
+                    <NavLink activeClassName="active" to="/contact">
                       Need Help?
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
                 <div className="others-options">
-                  <a href="login.html" className="login-btn">
+                  <NavLink activeClassName="active" to="/login">
                     <i className="flaticon-user"></i> Log In
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </nav>

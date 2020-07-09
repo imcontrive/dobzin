@@ -1,15 +1,12 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
 
 export default class Login extends Component {
   render() {
     return (
       <main>
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
+        <Loader />
 
         <section className="login-area">
           <div className="row m-0">
@@ -19,14 +16,14 @@ export default class Login extends Component {
                   <div className="d-table-cell">
                     <div className="login-form">
                       <div className="logo">
-                        <a href="index.html">
+                        <NavLink to="/">
                           <img src="assets/media/black-logo.png" alt="image" />
-                        </a>
+                        </NavLink>
                       </div>
 
                       <h3>Welcome back</h3>
                       <p>
-                        New to Dobzin? <a href="sign-up.html">Sign up</a>
+                        New to Dobzin? <NavLink to="/sign-up">Sign up</NavLink>
                       </p>
 
                       <form>
@@ -61,7 +58,9 @@ export default class Login extends Component {
                         </button>
 
                         <div className="forgot-password">
-                          <a href="reset-password.html">Forgot Password?</a>
+                          <NavLink to="/reset-password">
+                            Forgot Password?
+                          </NavLink>
                         </div>
 
                         <div className="connect-with-social">

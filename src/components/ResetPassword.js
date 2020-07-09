@@ -1,16 +1,12 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
 
 export default class ResetPassword extends Component {
   render() {
     return (
       <main>
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
-        {/* <!-- End Preloader --> */}
+        <Loader />
 
         {/* <!-- Start Login Area --> */}
         <section className="login-area">
@@ -21,9 +17,9 @@ export default class ResetPassword extends Component {
                   <div className="d-table-cell">
                     <div className="login-form">
                       <div className="logo">
-                        <a href="index.html">
+                        <NavLink to="/index">
                           <img src="/assets/media/black-logo.png" alt="image" />
-                        </a>
+                        </NavLink>
                       </div>
 
                       <h3>Reset your password</h3>
@@ -50,7 +46,7 @@ export default class ResetPassword extends Component {
                         </button>
 
                         <div className="forgot-password">
-                          Back to <a href="login.html">Log In</a>
+                          Back to <NavLink to="/login">Log In</NavLink>
                         </div>
                       </form>
                     </div>

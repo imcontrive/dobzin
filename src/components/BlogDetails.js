@@ -1,75 +1,15 @@
 import React, { Component } from "react";
+import Loader from "./Loader";
+import Nav from "./Nav";
+import NavList from "./NavList";
+import QuickLinks from "./QuickLinks";
 
 export default class BlogDetails extends Component {
   render() {
     return (
       <main>
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
-
-        <div class="navbar-area">
-          <div class="luvion-responsive-nav">
-            <div class="container">
-              <div class="luvion-responsive-menu">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="/assets/media/logo.png" alt="logo" />
-                    <img src="/assets/media/black-logo.png" alt="logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="luvion-nav">
-            <div class="container">
-              <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html">
-                  <img src="/assets/media/logo.png" alt="logo" />
-                  <img src="/assets/media/black-logo.png" alt="logo" />
-                </a>
-
-                <div
-                  class="collapse navbar-collapse mean-menu"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link">
-                        Home
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="about.html" class="nav-link">
-                        About Us
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="merchants.html" class="nav-link">
-                        Merchants
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="contact.html" class="nav-link">
-                        Need Help?
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="others-options">
-                    <a href="login.html" class="login-btn">
-                      <i class="flaticon-user"></i> Log In
-                    </a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        {/* <!-- End Navbar Area --> */}
+        <Loader />
+        <Nav />
 
         {/* <!-- Start Page Title Area --> */}
         <div
@@ -355,42 +295,13 @@ export default class BlogDetails extends Component {
               <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget pl-5">
                   <h3>Company</h3>
-                  <ul class="list">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="merchants.html">Merchants</a>
-                    </li>
-                    <li>
-                      <a href="partner.html">Partner With Us</a>
-                    </li>
-                    <li>
-                      <a href="https://angel.co/company/dobzin/jobs">Careers</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                  </ul>
+                  <NavList />
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget">
                   <h3>Quick Links</h3>
-                  <ul class="list">
-                    <li>
-                      <a href="faq.html">FAQ's</a>
-                    </li>
-                    <li>
-                      <a href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="terms.html">Terms & Condition</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
+                  <QuickLinks />
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 col-md-6">

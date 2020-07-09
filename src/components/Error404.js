@@ -1,15 +1,12 @@
 import React, { Component } from "react";
+import Loader from "./Loader";
+import { NavLink } from "react-router-dom";
 
 export default class Error404 extends Component {
   render() {
     return (
       <main>
-        <div className="preloader" style={{ display: "none" }}>
-          <div className="loader">
-            <div className="shadow"></div>
-            <div className="box"></div>
-          </div>
-        </div>
+        <Loader />
 
         <section className="error-area">
           <div className="d-table">
@@ -24,9 +21,9 @@ export default class Error404 extends Component {
                     name changed or is temporarily unavailable.
                   </p>
 
-                  <a href="index.html" className="btn btn-primary">
+                  <NavLink href="index.html" className="btn btn-primary">
                     Go to Home
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

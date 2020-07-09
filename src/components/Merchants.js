@@ -1,95 +1,26 @@
 import React, { Component } from "react";
-import "./../style.css";
-import "./../flaticon.css";
-import "./../bootstrap.min.css";
-import "./../meanmenu.css";
-import "./../slick.min.css";
-import "./../responsive.css";
-import "./../odometer.min.css";
-import "./../nice-select.css";
-import "./../magnific-popup.min.css";
-import "./../fontawesome.min.css";
-import "./../animate.min.css";
+import Loader from "./Loader";
+import NavList from "./NavList";
+import QuickLinks from "./QuickLinks";
+import Nav from "./Nav";
 
 export default class Merchants extends Component {
   render() {
     return (
       <main>
-        <div classname="preloader" style={{ display: "none" }}>
-          <div classname="loader">
-            <div classname="shadow"></div>
-            <div classname="box"></div>
-          </div>
-        </div>
-        <div classname="navbar-area">
-          <div classname="luvion-responsive-nav">
-            <div classname="container">
-              {" "}
-              <div classname="luvion-responsive-menu">
-                <div classname="logo">
-                  {" "}
-                  <a href="index.html">
-                    <img src="/assets/media/logo.png" alt="logo" />
-                    <img src="/assets/media/black-logo.png" alt="logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div classname="luvion-nav">
-            <div classname="container">
-              <nav classname="navbar navbar-expand-md navbar-light">
-                <a classname="navbar-brand" href="index.html">
-                  <img src="/assets/media/logo.png" alt="logo" />
-                  <img src="/assets/media/black-logo.png" alt="logo" />
-                </a>
-                <div
-                  classname="collapse navbar-collapse mean-menu"
-                  id="navbarSupportedContent"
-                >
-                  <ul classname="navbar-nav">
-                    <li classname="nav-item">
-                      <a href="index.html" classname="nav-link">
-                        Home
-                      </a>
-                    </li>
-                    <li classname="nav-item">
-                      <a href="about.html " classname="nav-link">
-                        About Us
-                      </a>
-                    </li>
-                    <li classname="nav-item">
-                      <a href="merchants.html" classname="nav-link">
-                        Merchants
-                      </a>
-                    </li>
-                    <li classname="nav-item">
-                      <a href="contact.html" classname="nav-link">
-                        Need Help?
-                      </a>
-                    </li>
-                  </ul>
-                  <div classname="others-options">
-                    <a href="login.html" classname="login-btn">
-                      <i classname="flaticon-user"></i> Log In
-                    </a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
+        <Loader />
+        <Nav />
 
         <div
-          classname="main-banner-section jarallax"
+          className="main-banner-section jarallax"
           data-jarallax='{"speed": 0.3}'
         >
-          <div classname="d-table">
-            <div classname="d-table-cell">
-              <div classname="container">
-                <div classname="row align-items-center">
-                  <div classname="col-lg-7 col-md-12">
-                    <div classname="banner-content">
+          <div className="d-table">
+            <div className="d-table-cell">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className="col-lg-7 col-md-12">
+                    <div className="banner-content">
                       <h1>Grow with the Dobzin Merchant Program</h1>
                       <p>
                         Improve your customer experience with blazing fast
@@ -97,23 +28,23 @@ export default class Merchants extends Component {
                         them Pay Later with Dobzin.
                       </p>
 
-                      <div classname="overview-content"></div>
-                      <ul classname="services-list">
+                      <div className="overview-content"></div>
+                      <ul className="services-list">
                         <p>
-                          <i classname="flaticon-check-mark"></i> Build trust
+                          <i className="flaticon-check-mark"></i> Build trust
                           with your loyal users
                         </p>
                         <p>
-                          <i classname="flaticon-check-mark"></i> With our quick
+                          <i className="flaticon-check-mark"></i> With our quick
                           and seamless onboarding, get partnered with Dobzin
                         </p>
                         <p>
-                          <i classname="flaticon-check-mark"></i> Extend the
+                          <i className="flaticon-check-mark"></i> Extend the
                           finest payment experience to your customers and grow
                           your business
                         </p>
                         <p>
-                          <i classname="flaticon-check-mark"></i> Offer your
+                          <i className="flaticon-check-mark"></i> Offer your
                           customers complete suite of payment products and
                           services
                         </p>
@@ -121,10 +52,10 @@ export default class Merchants extends Component {
                     </div>
                   </div>
 
-                  <div classname="col-lg-5 col-md-12">
-                    <div classname="money-transfer-form">
+                  <div className="col-lg-5 col-md-12">
+                    <div className="money-transfer-form">
                       <form>
-                        <div classname="money-transfer-info">
+                        <div className="money-transfer-info">
                           <strong
                             style={{ fontSize: "26px", marginTop: "18px" }}
                           >
@@ -136,38 +67,38 @@ export default class Merchants extends Component {
                           type="text"
                           name="name"
                           id="name"
-                          classname="form-control"
+                          className="form-control"
                           required
                           data-error="Please enter business name"
                           placeholder="Name of business"
                         />
-                        <div classname="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                         <br />
                         <input
                           type="text"
                           name="email"
                           id="email"
-                          classname="form-control"
+                          className="form-control"
                           required
                           data-error="Please enter your business email"
                           placeholder="Official email id"
                         />
-                        <div classname="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                         <br />
                         <input
                           type="text"
                           name="number"
                           id="number"
-                          classname="form-control"
+                          className="form-control"
                           required
                           data-error="Please enter your phonr no"
                           placeholder="Mobile no"
                         />
-                        <div classname="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                         <br />
                         <textarea
                           name="message"
-                          classname="form-control"
+                          className="form-control"
                           id="message"
                           cols="10"
                           rows="1"
@@ -175,16 +106,16 @@ export default class Merchants extends Component {
                           data-error="Write your message"
                           placeholder="Business description"
                         ></textarea>
-                        <div classname="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                         <br />
-                        <div classname="single-information-box">
-                          <div classname="btn-box">
-                            <button type="submit" classname="btn btn-primary">
+                        <div className="single-information-box">
+                          <div className="btn-box">
+                            <button type="submit" className="btn btn-primary">
                               Submit
                             </button>
                             <div
                               id="msgSubmit"
-                              classname="h3 text-center hidden"
+                              className="h3 text-center hidden"
                             ></div>
                           </div>
                         </div>
@@ -198,14 +129,14 @@ export default class Merchants extends Component {
           <div id="jarallax-container-0"></div>
         </div>
 
-        <section classname="featured-boxes-area">
-          <div classname="container">
-            <div classname="featured-boxes-inner">
-              <div classname="row m-0">
-                <div classname="col-lg-3 col-sm-6 col-md-6 p-0">
-                  <div classname="single-featured-box">
-                    <div classname="icon">
-                      <i classname="flaticon-piggy-bank"></i>
+        <section className="featured-boxes-area">
+          <div className="container">
+            <div className="featured-boxes-inner">
+              <div className="row m-0">
+                <div className="col-lg-3 col-sm-6 col-md-6 p-0">
+                  <div className="single-featured-box">
+                    <div className="icon">
+                      <i className="flaticon-piggy-bank"></i>
                     </div>
                     <h3>25% Increase in Order Value</h3>
                     <p>
@@ -214,10 +145,10 @@ export default class Merchants extends Component {
                     </p>
                   </div>
                 </div>
-                <div classname="col-lg-3 col-sm-6 col-md-6 p-0">
-                  <div classname="single-featured-box">
-                    <div classname="icon color-fb7756">
-                      <i classname="flaticon-shield"></i>
+                <div className="col-lg-3 col-sm-6 col-md-6 p-0">
+                  <div className="single-featured-box">
+                    <div className="icon color-fb7756">
+                      <i className="flaticon-shield"></i>
                     </div>
                     <h3>One click checkout</h3>
                     <p>
@@ -226,10 +157,10 @@ export default class Merchants extends Component {
                     </p>
                   </div>
                 </div>
-                <div classname="col-lg-3 col-sm-6 col-md-6 p-0">
-                  <div classname="single-featured-box">
-                    <div classname="icon color-facd60">
-                      <i classname="flaticon-data-encryption"></i>
+                <div className="col-lg-3 col-sm-6 col-md-6 p-0">
+                  <div className="single-featured-box">
+                    <div className="icon color-facd60">
+                      <i className="flaticon-data-encryption"></i>
                     </div>
                     <h3>Failure rate below 1%</h3>
                     <p>
@@ -238,10 +169,10 @@ export default class Merchants extends Component {
                     </p>
                   </div>
                 </div>
-                <div classname="col-lg-3 col-sm-6 col-md-6 p-0">
-                  <div classname="single-featured-box">
-                    <div classname="icon color-1ac0c6">
-                      <i classname="flaticon-wallet"></i>
+                <div className="col-lg-3 col-sm-6 col-md-6 p-0">
+                  <div className="single-featured-box">
+                    <div className="icon color-1ac0c6">
+                      <i className="flaticon-wallet"></i>
                     </div>
                     <h3>Bank grade security</h3>
                     <p>
@@ -255,16 +186,16 @@ export default class Merchants extends Component {
           </div>
         </section>
 
-        <section classname="how-it-works-area ptb-70">
-          <div classname="container">
-            <div classname="section-title">
+        <section className="how-it-works-area ptb-70">
+          <div className="container">
+            <div className="section-title">
               <h2>A checkout funnel?</h2>
-              <div classname="bar"></div>
+              <div className="bar"></div>
               <p>How about a checkout fire hose.</p>
             </div>
-            <div classname="row">
-              <div classname="col-lg-12 col-sm-6 col-md-6">
-                <div classname="single-how-it-works">
+            <div className="row">
+              <div className="col-lg-12 col-sm-6 col-md-6">
+                <div className="single-how-it-works">
                   <img src="/assets/media/c1.png" alt="image" />
                 </div>
               </div>
@@ -272,17 +203,17 @@ export default class Merchants extends Component {
           </div>
         </section>
 
-        <section classname="funfacts-area ptb-70">
-          <div classname="container">
-            <div classname="section-title">
+        <section className="funfacts-area ptb-70">
+          <div className="container">
+            <div className="section-title">
               <h2>We Always Try To Understand Customers Expectation</h2>
-              <div classname="bar"></div>
+              <div className="bar"></div>
             </div>
-            <div classname="row">
-              <div classname="col-lg-3 col-sm-3 col-md-3 col-6">
-                <div classname="funfact">
+            <div className="row">
+              <div className="col-lg-3 col-sm-3 col-md-3 col-6">
+                <div className="funfact">
                   <h3>
-                    <span classname="odometer" data-count="2">
+                    <span className="odometer" data-count="2">
                       00
                     </span>
                     M+
@@ -290,10 +221,10 @@ export default class Merchants extends Component {
                   <p>Happy Consumers</p>
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-3 col-md-3 col-6">
-                <div classname="funfact">
+              <div className="col-lg-3 col-sm-3 col-md-3 col-6">
+                <div className="funfact">
                   <h3>
-                    <span classname="odometer" data-count="500">
+                    <span className="odometer" data-count="500">
                       00
                     </span>
                     K+
@@ -301,10 +232,10 @@ export default class Merchants extends Component {
                   <p>Credit Transactions</p>
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-3 col-md-3 col-6">
-                <div classname="funfact">
+              <div className="col-lg-3 col-sm-3 col-md-3 col-6">
+                <div className="funfact">
                   <h3>
-                    <span classname="odometer" data-count="250">
+                    <span className="odometer" data-count="250">
                       00
                     </span>
                     +
@@ -312,10 +243,10 @@ export default class Merchants extends Component {
                   <p>Merchants</p>
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-3 col-md-3 col-6">
-                <div classname="funfact">
+              <div className="col-lg-3 col-sm-3 col-md-3 col-6">
+                <div className="funfact">
                   <h3>
-                    <span classname="odometer" data-count="400">
+                    <span className="odometer" data-count="400">
                       00
                     </span>
                     Cr +
@@ -324,25 +255,25 @@ export default class Merchants extends Component {
                 </div>
               </div>
             </div>
-            <div classname="map-bg">
+            <div className="map-bg">
               <img src="/assets/media/map.png" alt="map" />
             </div>
           </div>
         </section>
 
-        <section classname="ready-to-talk">
-          <div classname="container">
-            <div classname="ready-to-talk-content">
+        <section className="ready-to-talk">
+          <div className="container">
+            <div className="ready-to-talk-content">
               <h3>More that 1.5 million users and organizations use Dobzin</h3>
             </div>
           </div>
         </section>
 
-        <div classname="partner-area">
-          <div classname="container">
-            <div classname="partner-inner">
-              <div classname="row align-items-center">
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+        <div className="partner-area">
+          <div className="container">
+            <div className="partner-inner">
+              <div className="row align-items-center">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p1.png"
@@ -354,7 +285,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p2.png"
@@ -366,7 +297,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p3.png"
@@ -378,7 +309,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p4.png"
@@ -390,7 +321,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p5.png"
@@ -402,7 +333,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p6.png"
@@ -414,7 +345,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p7.png"
@@ -426,7 +357,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p8.png"
@@ -438,7 +369,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p9.png"
@@ -450,7 +381,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p10.png"
@@ -462,7 +393,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p11.png"
@@ -474,7 +405,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p12.png"
@@ -486,7 +417,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p13.png"
@@ -498,7 +429,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p14.png"
@@ -510,7 +441,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p15.png"
@@ -522,7 +453,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p16.png"
@@ -534,7 +465,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p17.png"
@@ -546,7 +477,7 @@ export default class Merchants extends Component {
                     />
                   </a>
                 </div>
-                <div classname="col-lg-2 col-sm-4 col-md-3 col-6">
+                <div className="col-lg-2 col-sm-4 col-md-3 col-6">
                   <a href="#">
                     <img
                       src="/assets/media/partner-image/p18.png"
@@ -564,12 +495,12 @@ export default class Merchants extends Component {
         </div>
 
         {/* <!-- Start Footer Area --> */}
-        <footer classname="footer-area">
-          <div classname="container">
-            <div classname="row">
-              <div classname="col-lg-3 col-sm-6 col-md-6">
-                <div classname="single-footer-widget">
-                  <div classname="logo">
+        <footer className="footer-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-3 col-sm-6 col-md-6">
+                <div className="single-footer-widget">
+                  <div className="logo">
                     <a href="index.html">
                       <img src="/assets/media/black-logo.png" alt="logo" />
                     </a>
@@ -578,18 +509,18 @@ export default class Merchants extends Component {
                       credit line.
                     </p>
                   </div>
-                  <ul classname="social-links">
+                  <ul className="social-links">
                     <li>
                       <a
                         href="https://www.facebook.com/dobzinindia"
                         target="_blank"
                       >
-                        <i classname="fab fa-facebook-f"></i>
+                        <i className="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://twitter.com/dobzinindia" target="_blank">
-                        <i classname="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li>
@@ -597,7 +528,7 @@ export default class Merchants extends Component {
                         href="https://www.instagram.com/dobzin/"
                         target="_blank"
                       >
-                        <i classname="fab fa-instagram"></i>
+                        <i className="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li>
@@ -605,57 +536,28 @@ export default class Merchants extends Component {
                         href="https://www.linkedin.com/company/dobzin"
                         target="_blank"
                       >
-                        <i classname="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-6 col-md-6">
-                <div classname="single-footer-widget pl-5">
+              <div className="col-lg-3 col-sm-6 col-md-6">
+                <div className="single-footer-widget pl-5">
                   <h3>Company</h3>
-                  <ul classname="list">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="merchants.html">Merchants</a>
-                    </li>
-                    <li>
-                      <a href="partner.html">Partner With Us</a>
-                    </li>
-                    <li>
-                      <a href="https://angel.co/company/dobzin/jobs">Careers</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                  </ul>
+                  <NavList />
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-6 col-md-6">
-                <div classname="single-footer-widget">
+              <div className="col-lg-3 col-sm-6 col-md-6">
+                <div className="single-footer-widget">
                   <h3>Quick Links</h3>
-                  <ul classname="list">
-                    <li>
-                      <a href="faq.html">FAQ's</a>
-                    </li>
-                    <li>
-                      <a href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="terms.html">Terms & Condition</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
+                  <QuickLinks />
                 </div>
               </div>
-              <div classname="col-lg-3 col-sm-6 col-md-6">
-                <div classname="single-footer-widget">
+              <div className="col-lg-3 col-sm-6 col-md-6">
+                <div className="single-footer-widget">
                   <h3>Address</h3>
-                  <ul classname="footer-contact-info">
+                  <ul className="footer-contact-info">
                     <li>
                       <span>Location :</span> Innov8, ILD Trade Tower,
                       Sector-47, Sohna Road, Gurugram, Haryana 122018
@@ -671,20 +573,20 @@ export default class Merchants extends Component {
                 </div>
               </div>
             </div>
-            <div classname="copyright-area">
+            <div className="copyright-area">
               <p>
                 Copyright @2020 <a>DOBZIN</a>. All rights reserved
               </p>
             </div>
           </div>
-          <div classname="map-image">
+          <div className="map-image">
             <img src="/assets/media/map.png" alt="map" />
           </div>
         </footer>
         {/* <!-- End Footer Area --> */}
 
-        <div classname="go-top">
-          <i classname="fas fa-arrow-up"></i>
+        <div className="go-top">
+          <i className="fas fa-arrow-up"></i>
         </div>
       </main>
     );
