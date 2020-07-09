@@ -17,7 +17,7 @@ export default class Login extends Component {
                     <div className="login-form">
                       <div className="logo">
                         <NavLink to="/">
-                          <img src="assets/media/black-logo.png" alt="image" />
+                          <img src="assets/media/black-logo.png" alt="logo" />
                         </NavLink>
                       </div>
 

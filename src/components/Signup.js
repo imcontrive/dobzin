@@ -18,7 +18,7 @@ export default class Signup extends Component {
                     <div className="signup-form">
                       <div className="logo">
                         <NavLink to="/">
-                          <img src="/assets/media/black-logo.png" alt="image" />
+                          <img src="/assets/media/black-logo.png" alt="logo" />
                         </NavLink>
                       </div>
 

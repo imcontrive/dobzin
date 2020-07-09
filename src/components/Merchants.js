@@ -196,7 +196,7 @@ export default class Merchants extends Component {
             <div className="row">
               <div className="col-lg-12 col-sm-6 col-md-6">
                 <div className="single-how-it-works">
-                  <img src="/assets/media/c1.png" alt="image" />
+                  <img src="/assets/media/c1.png" alt="media-image" />
                 </div>
               </div>
             </div>

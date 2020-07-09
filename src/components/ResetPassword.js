@@ -18,7 +18,10 @@ export default class ResetPassword extends Component {
                     <div className="login-form">
                       <div className="logo">
                         <NavLink to="/index">
-                          <img src="/assets/media/black-logo.png" alt="image" />
+                          <img
+                            src="/assets/media/black-logo.png"
+                            alt="med-img"
+                          />
                         </NavLink>
                       </div>
 

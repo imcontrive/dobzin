@@ -33,7 +33,7 @@ export default class Partner extends Component {
                   </a>
                   <div className="bar"></div>
                   <div className="faq-image">
-                    <img src="/assets/media/2.png" alt="image" />
+                    <img src="/assets/media/2.png" alt="image-012" />
                   </div>
                 </div>
               </div>

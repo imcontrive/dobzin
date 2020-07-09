@@ -34,7 +34,7 @@ export default class Faq extends Component {
                   <h2>Frequently Asked Questions</h2>
                   <div className="bar"></div>
                   <div className="faq-image">
-                    <img src="/assets/media/faq.png" alt="image" />
+                    <img src="/assets/media/faq.png" alt="faq-img" />
                   </div>
                 </div>
               </div>

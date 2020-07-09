@@ -51,7 +51,7 @@ export default class About extends Component {
 
               <div className="col-lg-6 col-md-12">
                 <div className="about-image">
-                  <img src="/assets/media/3.png" alt="image" />
+                  <img src="/assets/media/3.png" alt="ab-image" />
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default class About extends Component {
               <div className="col-lg-6 col-md-6">
                 <div className="single-team-member">
                   <div className="member-image">
-                    <img src="/assets/media/t1.png" alt="image" />
+                    <img src="/assets/media/t1.png" alt="ab-image" />
 
                     <ul className="social">
                       <li>

@@ -163,7 +163,7 @@ export default class Contact extends Component {
           </div>
 
           <div className="bg-map">
-            <img src="/assets/media/bg-map.png" alt="image" />
+            <img src="/assets/media/bg-map.png" alt="bg-map" />
           </div>
         </section>
 

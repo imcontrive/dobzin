@@ -166,7 +166,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/1.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>Instant credit</h3>
                   <p>
@@ -179,7 +179,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/2.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>Withdraw as low as ₹ 3,000</h3>
                   <p>
@@ -192,7 +192,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/3.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>No usage, No interest</h3>
                   <p>
@@ -205,7 +205,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/6.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>Big rewards with our credit card </h3>
                   <p>
@@ -219,7 +219,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/5.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>Credit limit available for a lifetime</h3>
                   <p>
@@ -233,7 +233,7 @@ export default class Index extends Component {
                 <div className="single-how-it-works">
                   <img
                     src="assets/media/how-it-works-image/4.png"
-                    alt="image"
+                    alt="how-it-works"
                   />
                   <h3>No collateral, No guarantors</h3>
                   <p>
@@ -254,9 +254,9 @@ export default class Index extends Component {
             <div className="overview-box">
               <div className="overview-image">
                 <div className="image">
-                  <img src="assets/media/2.png" alt="image" />
+                  <img src="assets/media/2.png" alt="med-img" />
                   <div className="circle-img">
-                    <img src="assets/media/circle.png" alt="image" />
+                    <img src="assets/media/circle.png" alt="how-it-works" />
                   </div>
                 </div>
               </div>
@@ -354,9 +354,9 @@ export default class Index extends Component {
 
               <div className="overview-image">
                 <div className="image">
-                  <img src="assets/media/5.png" alt="image" />
+                  <img src="assets/media/5.png" alt="how-it-works" />
                   <div className="circle-img">
-                    <img src="assets/media/circle.png" alt="image" />
+                    <img src="assets/media/circle.png" alt="how-it-works" />
                   </div>
                 </div>
               </div>
@@ -419,7 +419,10 @@ export default class Index extends Component {
               </div>
               <div className="col-lg-7 col-md-12">
                 <div className="features-image">
-                  <img src="assets/media/features-img1.png" alt="image" />
+                  <img
+                    src="assets/media/features-img1.png"
+                    alt="how-it-works"
+                  />
                 </div>
               </div>
             </div>

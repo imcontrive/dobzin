@@ -33,7 +33,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/1.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/1.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
@@ -69,7 +72,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/2.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/2.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
@@ -103,7 +109,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/3.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/3.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
@@ -137,7 +146,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/4.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/4.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
@@ -171,7 +183,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/5.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/5.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
@@ -207,7 +222,10 @@ export default class Blog extends Component {
                 <div className="single-blog-post">
                   <div className="blog-image">
                     <a href="#">
-                      <img src="/assets/media/blog-image/6.jpg" alt="image" />
+                      <img
+                        src="/assets/media/blog-image/6.jpg"
+                        alt="blog-images"
+                      />
                     </a>
 
                     <div className="date">
